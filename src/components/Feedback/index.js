@@ -13,8 +13,8 @@ class Feedback extends Component {
   }
 
   renderEmojiContainer = () => {
-    const {feedbackData} = this.props
-    const {emojis} = feedbackData
+    const {resources} = this.props
+    const {emojis} = resources
     return (
       <div>
         <h1 className="heading">
@@ -37,8 +37,8 @@ class Feedback extends Component {
   }
 
   renderSuccessfulContainer = () => {
-    const {feedbackData} = this.props
-    const {loveEmojiUrl} = feedbackData
+    const {resources} = this.props
+    const {loveEmojiUrl} = resources
     return (
       <div className="thankyou-container">
         <img src={loveEmojiUrl} alt="love emoji" className="emoji" />
